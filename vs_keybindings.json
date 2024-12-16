@@ -1,24 +1,29 @@
 [
   {
-    "key": "ctrl+n",
+    "key": "ctrl+k",
     "command": "workbench.files.action.focusFilesExplorer",
     "when": "sideBarVisible && !filesExplorerFocus && !suggestWidgetVisible && vim.mode != 'Insert'"
   },
   {
-    "key": "ctrl+n",
+    "key": "ctrl+k",
     "command": "workbench.files.action.focusFilesExplorer",
     "when": "!sideBarVisible && !suggestWidgetVisible && vim.mode != 'Insert'"
   },
   {
-    "key": "ctrl+n",
+    "key": "ctrl+k",
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible &&  vim.mode == 'Insert'"
   },
   {
-    "key": "ctrl+n",
+    "key": "ctrl+k",
     "command": "selectNextSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus &&  vim.mode == 'Insert'"
   },
+  {
+    "key":     "ctrl+k",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when":    "filesExplorerFocus"
+},
   {
     "key": "enter",
     "command": "list.select",
