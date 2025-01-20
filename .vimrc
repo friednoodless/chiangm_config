@@ -11,20 +11,13 @@ call plug#begin()
   Plug 'preservim/nerdtree'
 call plug#end()
 
-if has("patch-9.0.0")
-	colorscheme desert
-else
-	if &diff
-		colorscheme slate
-	else
-		colorscheme elflord
-	endif
-endif
+colorscheme retrobox
 
 syntax on
 
 " Enable mouse support.
 set mouse=a
+
 
 " Enable persistent undo.
 set undofile
@@ -60,6 +53,7 @@ set history=10000
 set cursorline
 set cursorcolumn
 highlight CursorColumn ctermbg=lightcyan ctermfg=black
+
 
 
 
